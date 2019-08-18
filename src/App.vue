@@ -2,7 +2,7 @@
 <template>
   <div id="app">
     <div class="container">
-      <h1>Tarefas VUEX</h1>
+      <h1>Lista de Tarefas VUEX</h1>
       <AddTodo />
       <FilterTodos />
       <Todos />

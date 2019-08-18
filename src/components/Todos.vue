@@ -11,7 +11,7 @@
       </span>
     </legend>
     <div class="todos">
-      <div v-for="todo in allTodos" :key="todo.id" class="todo">
+      <div v-for="todo in allTodos" :key="todo.id" @dblclick="changeTodo(todo)" class="todo" :class="{'is-complete':todo.completed}">
         {{ todo.title }}
         <i class="fa fa-trash-o" @click="deleteTodo(todo.id)"></i>
       </div>
@@ -25,7 +25,15 @@
   export default {
     name: 'Todos',
     methods: {
-      ...mapActions(['fetchTodos', 'deleteTodo'])
+      ...mapActions(['fetchTodos', 'deleteTodo', 'updateTodo']),
+      changeTodo(todo) {
+        const newTodo = {
+          id: todo.id,
+          title: todo.title,
+          completed: !todo.completed
+        }
+        this.updateTodo(newTodo)
+      }
     },
     computed: mapGetters(['allTodos']),
     created() {
@@ -39,6 +47,18 @@
     display: flex;
     justify-content: space-around;
     margin-top: 2rem;
+  }
+  .incomplete-box {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #41b883;
+  }
+  .complete-box {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #35495e;
   }
   .todos {
     display: grid;
@@ -55,24 +75,16 @@
     text-align: center;
     background: #41b883;
   }
+  .is-complete {
+    background: #35495e;
+    color: #fff;
+  }
   i {
     cursor: pointer;
     position: absolute;
     right: 10px;
     bottom: 10px;
     color: #fff;
-  }
-  .incomplete-box {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background: #41b883;
-  }
-  .complete-box {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background: #35495e;
   }
   i:hover {
     color: #000;
