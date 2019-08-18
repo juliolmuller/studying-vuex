@@ -52,7 +52,6 @@ const mutations = {
     const index = state.todos.findIndex(todo => todo.id == newTodo.id)
     if (index != -1) {
       state.todos.splice(index, 1, newTodo)
-      console.log(state.todos[index])
     }
   }
 }
