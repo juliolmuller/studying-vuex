@@ -1,7 +1,15 @@
 
 <template>
   <div>
-    <h3>Lista de Tarefas</h3>
+    <legend>
+      <span>Dê duplo-clique para marcar a tarefa como completa/incompleta</span>
+      <span>
+        <span class="incomplete-box"></span> = Incompleta
+      </span>
+      <span>
+        <span class="complete-box"></span> = Completa
+      </span>
+    </legend>
     <div class="todos">
       <div v-for="todo in allTodos" :key="todo.id" class="todo">
         {{ todo.title }}
@@ -27,19 +35,25 @@
 </script>
 
 <style scoped>
+  legend {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+  }
   .todos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
+    margin-top: 1rem;
   }
   .todo {
     cursor: pointer;
     position: relative;
     padding: 1rem;
-    background: #41b883;
     border: 1px solid #ccc;
     border-radius: 5px;
     text-align: center;
+    background: #41b883;
   }
   i {
     cursor: pointer;
@@ -48,7 +62,24 @@
     bottom: 10px;
     color: #fff;
   }
+  .incomplete-box {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #41b883;
+  }
+  .complete-box {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #35495e;
+  }
   i:hover {
     color: #000;
+  }
+  @media (max-width: 600px) {
+    .todos {
+      grid-template-columns: 1fr;
+    }
   }
 </style>
