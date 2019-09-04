@@ -1,7 +1,14 @@
 {
   "name": "crud-vuex",
+  "author": "Julio L. Muller",
   "version": "1.0.1",
-  "private": true,
+  "description": "Simple CRUD application with Vue.js and Vuex.",
+  "keywords": [
+    "julio muller",
+    "crud",
+    "vue",
+    "vuex"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
