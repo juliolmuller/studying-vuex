@@ -4,8 +4,8 @@
 - **JavaScript developed by:** [Julio L. Muller](https://github.com/juliolmuller)
 - **HTML & CSS delivered by:** [Hcode Treinamentos](https://www.hcode.com.br)
 - **Released on:** Aug 17, 2019
-- **Updated on:** Sep 4, 2019
-- **Latest version:** 1.0.1
+- **Updated on:** Dec 9, 2019
+- **Latest version:** 1.0.2
 - **License:** *FREE*
 
 ## Overview
