@@ -15,6 +15,10 @@ Application developed to demonstrate a functional CRUD application (create, read
 
 Take a look at this application running through [this link](https://juliolmuller.github.io/crud-vuex).
 
+## Project setup
+
+Run `npm install` to download all dependecnies and get the project set up.
+
 ## Development server
 
 Run `npm run serve` for a dev server. Navigate to `http://localhost:8080/`. The app will automatically reload if you change any of the source files.
