@@ -12,11 +12,11 @@
 </template>
 
 <script>
-  import { mapActions } from 'vuex'
+import { mapActions } from 'vuex'
 
-  export default {
-    name: 'FilterTodos',
-    methods: mapActions(['filterTodos'])
+export default {
+
+  methods: mapActions(['filterTodos']),
 }
 </script>
 

@@ -11,24 +11,23 @@
 </template>
 
 <script>
-  import { mapActions } from 'vuex'
+import { mapActions } from 'vuex'
 
-  export default {
-    name: 'AddTodo',
-    data() {
-      return {
-        title: ''
-      }
+export default {
+
+  data: () => ({
+    title: '',
+  }),
+
+  methods: {
+    ...mapActions(['addTodo']),
+    onSubmit(e) {
+      e.preventDefault()
+      this.addTodo(this.title)
+      this.title = ''
     },
-    methods: {
-      ...mapActions(['addTodo']),
-      onSubmit(e) {
-        e.preventDefault()
-        this.addTodo(this.title)
-        this.title = ''
-      }
-    }
-  }
+  },
+}
 </script>
 
 <style scoped>

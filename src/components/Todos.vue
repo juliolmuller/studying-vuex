@@ -11,7 +11,13 @@
       </span>
     </legend>
     <div class="todos">
-      <div v-for="todo in allTodos" :key="todo.id" @dblclick="changeTodo(todo)" class="todo" :class="{'is-complete':todo.completed}">
+      <div
+        v-for="todo in allTodos"
+        :key="todo.id"
+        @dblclick="changeTodo(todo)"
+        class="todo"
+        :class="{'is-complete':todo.completed}"
+      >
         {{ todo.title }}
         <i class="fa fa-trash-o" @click="deleteTodo(todo.id)"></i>
       </div>
@@ -20,26 +26,28 @@
 </template>
 
 <script>
-  import { mapGetters, mapActions } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 
-  export default {
-    name: 'Todos',
-    methods: {
-      ...mapActions(['fetchTodos', 'deleteTodo', 'updateTodo']),
-      changeTodo(todo) {
-        const newTodo = {
-          id: todo.id,
-          title: todo.title,
-          completed: !todo.completed
-        }
-        this.updateTodo(newTodo)
+export default {
+
+  computed: mapGetters(['allTodos']),
+
+  methods: {
+    ...mapActions(['fetchTodos', 'deleteTodo', 'updateTodo']),
+    changeTodo(todo) {
+      const newTodo = {
+        id: todo.id,
+        title: todo.title,
+        completed: !todo.completed,
       }
+      this.updateTodo(newTodo)
     },
-    computed: mapGetters(['allTodos']),
-    created() {
-      this.fetchTodos()
-    }
-  }
+  },
+
+  created() {
+    this.fetchTodos()
+  },
+}
 </script>
 
 <style scoped>
