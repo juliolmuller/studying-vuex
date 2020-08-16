@@ -1,28 +1,48 @@
+<h1 align="center">
+  :balance_scale: Simple CRUD with Vuex
+</h1>
 
-# Simple Vuex CRUD Application
-
-- **Author:** [Julio L. Muller](https://github.com/juliolmuller)
+- **Project proposed by:** [Traversy Media](https://www.traversymedia.com/)
+- **Project developed by:** [Julio L. Muller](https://github.com/juliolmuller)
 - **Released on:** Aug 17, 2019
-- **Updated on:** Jul 21, 2020
-- **Latest version:** 1.0.4
+- **Updated on:** Aug 16, 2020
+- **Latest version:** 1.0.5
 - **License:** MIT
 
-## Overview
+CRUD application developed to learn the official Vue.js state manager, Vuex. Completely based on Traversy Media's [crash course available in YouTube](https://www.youtube.com/watch?v=5lVQgZzLMHc).
 
-Application developed to demonstrate a functional CRUD application (create, read, update & delete data) using the JavaScript framework Vue.js and Vuex. This a front-end application which consumes a fake REST API called [JSON Placeholder](https://jsonplaceholder.typicode.com/) (no data is persistable).
+[Check out the application running!](https://juliolmuller.github.io/crud-vuex/)
 
-## Run Application
+## :trophy: Lessons Learned
 
-Take a look at this application running through [this link](https://juliolmuller.github.io/crud-vuex).
+- Vuex (official Vue's state manager)
+- `async`/`await` syntax :heart_eyes:
 
-## Project setup
+## :hammer: Technologies & Resources
 
-Run `npm install` to download all dependencies and get the project set up.
+**Frontend:**
+- Vue.js 2
+- Vuex
+- Axios (HTTP client)
 
-## Development server
+**Development:**
+- Visual Studio Code
+- Vue CLI & Node.js routines
 
-Run `npm run serve` for a dev server. Navigate to `http://localhost:8080/`. The app will automatically reload if you change any of the source files.
+## :zap: Features
 
-## Build
+- Fetch tasks from [JSON Placeholder REST API](https://jsonplaceholder.typicode.com/);
+- Create new task;
+- Complete existing task;
+- Delete existing task;
+- Change quantity of items being displayed;
 
-Run `npm run build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## :bell: Setting up the Environment
+
+Make sure to have **Node.js 10+** installed in your machine and its **npm** available in the command line, then use the following routines:
+
+```bash
+$ npm install   # Download dependencies
+$ npm run serve # Run development server
+$ npm run build # Build files for production
+```
