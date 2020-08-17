@@ -1,5 +1,5 @@
 <h1 align="center">
-  :balance_scale: Simple CRUD with Vuex
+  :pencil: Simple CRUD with Vuex
 </h1>
 
 - **Project proposed by:** [Traversy Media](https://www.traversymedia.com/)
@@ -8,6 +8,8 @@
 - **Updated on:** Aug 16, 2020
 - **Latest version:** 1.0.5
 - **License:** MIT
+
+![Application snapshot](./src/assets/app-overview.jpg)
 
 CRUD application developed to learn the official Vue.js state manager, Vuex. Completely based on Traversy Media's [crash course available in YouTube](https://www.youtube.com/watch?v=5lVQgZzLMHc).
 
