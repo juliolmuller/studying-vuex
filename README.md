@@ -13,7 +13,7 @@
 
 CRUD application developed to learn the official Vue.js state manager, Vuex. Completely based on Traversy Media's [crash course available in YouTube](https://www.youtube.com/watch?v=5lVQgZzLMHc).
 
-[Check out the application running!](https://juliolmuller.github.io/crud-vuex/)
+[Check out the application running!](https://juliolmuller.github.io/studying-vuex-crud/)
 
 ## :trophy: Lessons Learned
 
