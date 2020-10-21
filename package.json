@@ -1,7 +1,7 @@
 {
   "name": "crud-vuex",
   "author": "Julio L. Muller",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Simple CRUD application with Vue.js and Vuex.",
   "keywords": [
     "julio muller",
@@ -10,24 +10,26 @@
     "vuex"
   ],
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "start": "vue-cli-service serve --open",
+    "build": "vue-cli-service build --dest docs/ --modern",
     "lint": "vue-cli-service lint"
   },
-  "devDependencies": {
-    "@lacussoft/eslint-config-standard": "^1.0.6",
-    "@vue/cli-plugin-babel": "^4.5.3",
-    "@vue/cli-plugin-eslint": "^4.5.3",
-    "@vue/cli-plugin-vuex": "^4.5.3",
-    "@vue/cli-service": "^4.5.3",
-    "axios": "^0.19.2",
-    "babel-eslint": "^10.1.0",
+  "dependencies": {
+    "axios": "~0.20.0",
     "core-js": "^3.6.5",
+    "vue": "^2.6.12",
+    "vuex": "^3.5.1"
+  },
+  "devDependencies": {
+    "@lacussoft/eslint-config-standard": "^1.0.8",
+    "@vue/cli-plugin-babel": "^4.5.8",
+    "@vue/cli-plugin-eslint": "^4.5.8",
+    "@vue/cli-plugin-vuex": "^4.5.8",
+    "@vue/cli-service": "^4.5.8",
+    "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
     "eslint-plugin-vue": "^6.2.2",
-    "vue": "^2.6.11",
-    "vue-template-compiler": "^2.6.11",
-    "vuex": "^3.5.1"
+    "vue-template-compiler": "^2.6.12"
   },
   "eslintConfig": {
     "root": true,
@@ -43,11 +45,6 @@
       "parser": "babel-eslint"
     },
     "rules": {}
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
-    }
   },
   "babel": {
     "presets": [

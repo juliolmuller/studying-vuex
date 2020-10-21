@@ -5,8 +5,8 @@
 - **Project proposed by:** [Traversy Media](https://www.traversymedia.com/)
 - **Project developed by:** [Julio L. Muller](https://github.com/juliolmuller)
 - **Released on:** Aug 17, 2019
-- **Updated on:** Aug 16, 2020
-- **Latest version:** 1.0.5
+- **Updated on:** Oct 20, 2020
+- **Latest version:** 1.0.6
 - **License:** MIT
 
 ![Application snapshot](./src/assets/app-overview.jpg)
