@@ -1,13 +1,25 @@
 <h1 align="center">
-  :pencil: Simple CRUD with Vuex
+  :books: Simple CRUD with Vuex
 </h1>
 
-- **Project proposed by:** [Traversy Media](https://www.traversymedia.com/)
-- **Project developed by:** [Julio L. Muller](https://github.com/juliolmuller)
-- **Released on:** Aug 17, 2019
-- **Updated on:** Oct 20, 2020
-- **Latest version:** 1.0.6
-- **License:** MIT
+<p align="center">
+  <a href="#trophy-lessons-learned">Lessons Learned</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-technologies--resources">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#hammer-setting-up-the-environment">Environment Setup</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#zap-features">Features</a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/static/v1?labelColor=000000&color=42b883&label=created%20at&message=Aug%202019" alt="Creation Date" />
+
+  <img src="https://img.shields.io/github/last-commit/juliolmuller/studying-vuex-crud?label=updated%20at&labelColor=000000&color=42b883" alt="Update Date" />
+
+  <img src="https://img.shields.io/github/v/tag/juliolmuller/studying-vuex-crud?label=latest%20version&labelColor=000000&color=42b883" alt="Latest Version" />
+
+  <img src="https://img.shields.io/static/v1?labelColor=000000&color=42b883&label=PRs&message=welcome" alt="Pull Requests Welcome" />
+
+  <img src="https://img.shields.io/github/license/juliolmuller/studying-vuex-crud?labelColor=000000&color=42b883" alt="Project License" />
+</p>
 
 ![Application snapshot](./src/assets/app-overview.jpg)
 
@@ -20,7 +32,7 @@ CRUD application developed to learn the official Vue.js state manager, Vuex. Com
 - Vuex (official Vue's state manager)
 - `async`/`await` syntax :heart_eyes:
 
-## :hammer: Technologies & Resources
+## :rocket: Technologies & Resources
 
 **Frontend:**
 - Vue.js 2
@@ -31,15 +43,7 @@ CRUD application developed to learn the official Vue.js state manager, Vuex. Com
 - Visual Studio Code
 - Vue CLI & Node.js routines
 
-## :zap: Features
-
-- Fetch tasks from [JSON Placeholder REST API](https://jsonplaceholder.typicode.com/);
-- Create new task;
-- Complete existing task;
-- Delete existing task;
-- Change quantity of items being displayed;
-
-## :bell: Setting up the Environment
+## :hammer: Setting up the Environment
 
 Make sure to have **Node.js 10+** installed in your machine and its **npm** available in the command line, then use the following routines:
 
@@ -48,3 +52,11 @@ $ npm install   # Download dependencies
 $ npm run serve # Run development server
 $ npm run build # Build files for production
 ```
+
+## :zap: Features
+
+- [x] Fetch tasks from [JSON Placeholder REST API](https://jsonplaceholder.typicode.com/);
+- [x] Create new task;
+- [x] Complete existing task;
+- [x] Delete existing task;
+- [x] Change quantity of items being displayed;
