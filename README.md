@@ -21,7 +21,10 @@
   <img src="https://img.shields.io/github/license/juliolmuller/studying-vuex-crud?labelColor=000000&color=42b883" alt="Project License" />
 </p>
 
-![Application snapshot](./src/assets/app-overview.jpg)
+<br />
+<p align="center">
+  <img src="./src/assets/app-overview.jpg" alt="Application Overview" width="100%">
+</p>
 
 CRUD application developed to learn the official Vue.js state manager, Vuex. Completely based on Traversy Media's [crash course available in YouTube](https://www.youtube.com/watch?v=5lVQgZzLMHc).
 
@@ -48,9 +51,9 @@ CRUD application developed to learn the official Vue.js state manager, Vuex. Com
 Make sure to have **Node.js 10+** installed in your machine and its **npm** available in the command line, then use the following routines:
 
 ```bash
-$ npm install   # Download dependencies
-$ npm run serve # Run development server
-$ npm run build # Build files for production
+$ npm install     # Download dependencies
+$ npm run start   # Run development server
+$ npm run build   # Build files for production
 ```
 
 ## :zap: Features
