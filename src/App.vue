@@ -1,4 +1,3 @@
-
 <template>
   <div class="container">
     <h1 class="title">
@@ -7,27 +6,32 @@
 
     <TodoForm />
     <TodoFilter />
-    <Todos />
+
+    <suspense>
+      <template #default>
+        <Todos />
+      </template>
+      <template #fallback>
+        <Loading />
+      </template>
+    </suspense>
   </div>
 </template>
 
 <script>
-import { useStore } from 'vuex'
-import Todos from './components/Todos'
 import TodoForm from './components/TodoForm'
 import TodoFilter from './components/TodoFilter'
+import Loading from './components/Loading'
+import Todos from './components/Todos'
 
 export default {
   name: 'App',
 
   components: {
-    Todos,
     TodoForm,
     TodoFilter,
-  },
-
-  setup() {
-    useStore().dispatch('todos/fetchTodos')
+    Loading,
+    Todos,
   },
 }
 </script>

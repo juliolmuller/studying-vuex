@@ -51,7 +51,10 @@ export default {
     async fetchTodos({ commit }) {
       const { data } = await http.get('/')
 
-      commit('setTodos', data)
+      await new Promise((resolve) => {
+        setTimeout(resolve, 1000)
+        commit('setTodos', data)
+      })
     },
     async addTodo({ commit }, title) {
       const { data } = await http.post('/', { title, completed: false })
@@ -62,10 +65,9 @@ export default {
       http.delete(`/${id}`)
       commit('removeTodo', id)
     },
-    async updateTodo({ commit }, todo) {
-      const { data } = await http.put(`/${todo.id}`, todo)
-
-      commit('updateTodo', data)
+    updateTodo({ commit }, todo) {
+      http.put(`/${todo.id}`, todo)
+      commit('updateTodo', todo)
     },
   },
 }

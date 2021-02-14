@@ -1,4 +1,3 @@
-
 <template>
   <div class="todos-cards">
     <legend>
@@ -34,7 +33,7 @@ import { useStore } from 'vuex'
 export default {
   name: 'Todos',
 
-  setup() {
+  async setup() {
     const store = useStore()
     const todos = computed(() => store.getters['todos/todos'])
 
@@ -50,6 +49,8 @@ export default {
         completed: !todo.completed,
       })
     }
+
+    await store.dispatch('todos/fetchTodos')
 
     return {
       todos,
