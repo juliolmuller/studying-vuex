@@ -39,7 +39,9 @@ export default {
     const todos = computed(() => store.getters['todos/todos'])
 
     function deleteTodo(todo) {
-      store.dispatch('todos/deleteTodo', todo.id)
+      if (confirm('Tem certeza que quer excluir esta tarefa?')) {
+        store.dispatch('todos/deleteTodo', todo.id)
+      }
     }
 
     function toggleComplete(todo) {
