@@ -90,13 +90,14 @@ export default {
 }
 
 .todos-cards .todo {
-  cursor: pointer;
   position: relative;
   padding: 1rem;
   border: 1px solid #ccc;
   border-radius: 5px;
-  text-align: center;
   background: #41b883;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
 }
 
 .todos-cards .is-complete {
