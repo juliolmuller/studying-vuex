@@ -34,12 +34,14 @@ CRUD application developed to learn the official Vue.js state manager, Vuex. Com
 
 - Vuex (official Vue's state manager)
 - `async`/`await` syntax :heart_eyes:
+- Upgrading to Vuex 4;
+- Using `<suspense>` component to handle asynchrony
 
 ## :rocket: Technologies & Resources
 
 **Frontend:**
-- Vue.js 2
-- Vuex
+- Vue.js ~~v2~~ v3
+- Vuex ~~v3~~ v4
 - Axios (HTTP client)
 
 **Development:**
