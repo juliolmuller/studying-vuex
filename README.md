@@ -21,9 +21,8 @@
   <img src="https://img.shields.io/github/license/juliolmuller/studying-vuex-crud?labelColor=000000&color=42b883" alt="Project License" />
 </p>
 
-<br />
 <p align="center">
-  <img src="./src/assets/app-overview.jpg" alt="Application Overview" width="100%">
+  <img src="./.github/app-overview.jpg" alt="Application Overview" width="100%">
 </p>
 
 CRUD application developed to learn the official Vue.js state manager, Vuex. Completely based on Traversy Media's [crash course available in YouTube](https://www.youtube.com/watch?v=5lVQgZzLMHc).
@@ -46,7 +45,7 @@ CRUD application developed to learn the official Vue.js state manager, Vuex. Com
 
 **Development:**
 - Visual Studio Code
-- Vue CLI & Node.js routines
+- ~~Vue CLI~~Vite & Node.js routines
 
 ## :hammer: Setting up the Environment
 
@@ -54,7 +53,7 @@ Make sure to have **Node.js 10+** installed in your machine and its **npm** avai
 
 ```bash
 $ npm install     # Download dependencies
-$ npm run start   # Run development server
+$ npm start       # Run development server
 $ npm run build   # Build files for production
 ```
 
@@ -65,3 +64,4 @@ $ npm run build   # Build files for production
 - [x] Complete existing task;
 - [x] Delete existing task;
 - [x] Change quantity of items being displayed;
+- [ ] Re-implement using TypeScript
