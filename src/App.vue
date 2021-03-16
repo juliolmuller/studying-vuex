@@ -19,10 +19,10 @@
 </template>
 
 <script>
-import TodoForm from './components/TodoForm'
-import TodoFilter from './components/TodoFilter'
-import Loading from './components/Loading'
-import Todos from './components/Todos'
+import TodoForm from './components/TodoForm.vue'
+import TodoFilter from './components/TodoFilter.vue'
+import Loading from './components/Loading.vue'
+import Todos from './components/Todos.vue'
 
 export default {
   name: 'App',
