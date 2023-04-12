@@ -12,13 +12,13 @@
 <p align="center">
   <img src="https://img.shields.io/static/v1?labelColor=000000&color=42b883&label=created%20at&message=Aug%202019" alt="Creation Date" />
 
-  <img src="https://img.shields.io/github/last-commit/juliolmuller/studying-vuex-crud?label=updated%20at&labelColor=000000&color=42b883" alt="Update Date" />
+  <img src="https://img.shields.io/github/last-commit/juliolmuller/studying-vuex?label=updated%20at&labelColor=000000&color=42b883" alt="Update Date" />
 
-  <img src="https://img.shields.io/github/v/tag/juliolmuller/studying-vuex-crud?label=latest%20version&labelColor=000000&color=42b883" alt="Latest Version" />
+  <img src="https://img.shields.io/github/v/tag/juliolmuller/studying-vuex?label=latest%20version&labelColor=000000&color=42b883" alt="Latest Version" />
 
   <img src="https://img.shields.io/static/v1?labelColor=000000&color=42b883&label=PRs&message=welcome" alt="Pull Requests Welcome" />
 
-  <img src="https://img.shields.io/github/license/juliolmuller/studying-vuex-crud?labelColor=000000&color=42b883" alt="Project License" />
+  <img src="https://img.shields.io/github/license/juliolmuller/studying-vuex?labelColor=000000&color=42b883" alt="Project License" />
 </p>
 
 <p align="center">
@@ -27,7 +27,7 @@
 
 CRUD application developed to learn the official Vue.js state manager, Vuex. Completely based on Traversy Media's [crash course available in YouTube](https://www.youtube.com/watch?v=5lVQgZzLMHc).
 
-[Check out the application running!](https://juliolmuller.github.io/studying-vuex-crud/)
+[Check out the application running!](https://juliolmuller.github.io/studying-vuex/)
 
 ## :trophy: Lessons Learned
 
